@@ -60,7 +60,7 @@
 // 3.
 // Trouvez un moyen de mettre en majuscule un élément sur deux dans un array avec une boucle for (ex: ["JAVASCRIPT", "c'est", "FACILE"])
 
-let tab = ["Wesh ", "ca va ", "ou ", "quoi?", "Bruuh",];
+// let tab = ["Wesh ", "ca va ", "ou ", "quoi?", "Bruuh",];
 
 // Test 1 
 // for (let i = 0; i < tab.length; i++){
@@ -91,22 +91,36 @@ let tab = ["Wesh ", "ca va ", "ou ", "quoi?", "Bruuh",];
 
 // TEST 4 ON Y EST PRESKK
 
-for (let i = 0; i < tab.length; i++){
-    if (tab[i] == tab[1]){
-        console.log(tab[i].toUpperCase());
+// for (let i = 0; i < tab.length; i++){
+//     if (tab[i] == tab[1]){
+//         console.log(tab[i].toUpperCase());
 
-    }else if (tab[i] == tab[3]){
-        console.log(tab[i].toUpperCase());
+//     }else if (tab[i] == tab[3]){
+//         console.log(tab[i].toUpperCase());
+
+//     }else{
+//          console.log(tab[i].toLowerCase());
+//     }
+
+// }
+
+//TEST 5
+
+// chercher le 1er element de mon tableau puis prendre l'index du premir element. modulo = reste division. Ce sera toujours % 2 == 0 pour pair et == 1 pour impaire
+
+let tab = ["Wesh ", "ca va ", "ou ", "quoi?", "Bruuh"];
+
+for(let i = 0; i < tab.length; i++){
+    if(tab.indexOf(tab[i]) % 2 == 0){ 
+        tab[i] = tab[i].toUpperCase();
 
     }else{
-         console.log(tab[i].toLowerCase());
+        tab[i] = tab[i].toLowerCase();
 
     }
-
-    
 }
 
-
+console.log(tab);
 
 
 
@@ -118,7 +132,7 @@ for (let i = 0; i < tab.length; i++){
 // let mdp = prompt("Entrez un mdp");
 
 
-// for (let i = 0; i < 3; i++) {
+// for (let i = 0; i < 2; i++) {
 //    if ( mdp != "123"){
 //        alert("Accès refusé, réessaye");
 //        let mdp = prompt("Entrez un mdp");
