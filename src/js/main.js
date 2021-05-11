@@ -66,9 +66,18 @@
 // 4.
 // // Trouvez un moyen de faire rentrer un mot de passe a un utilisateur avec une boucle for et des conditions. S'il ne trouve pas le mot de passe après 3 essais, affichez-lui "accès refusé", sinon, affichez "accès accordé".
 
-// let mdp = prompt("Entrez un mdp");
+
+let mdp = prompt("Entrez un mdp");
 
 
-// for (mdp != "123") {
-//    alert("Accès accordé");
-// }
+for (let i = 0; i < 3; i++) {
+   if ( mdp != "123"){
+       alert("Accès refusé, réessaye");
+       let mdp = prompt("Entrez un mdp");
+
+   }else{
+       alert("Welcomeee");
+   }
+}
+
+
