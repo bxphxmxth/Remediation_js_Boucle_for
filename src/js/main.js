@@ -60,7 +60,7 @@
 // 3.
 // Trouvez un moyen de mettre en majuscule un élément sur deux dans un array avec une boucle for (ex: ["JAVASCRIPT", "c'est", "FACILE"])
 
-let tab = ["Wesh ", "ca va ", "ou ", "quoi?"];
+let tab = ["Wesh ", "ca va ", "ou ", "quoi?", "Bruuh",];
 
 // Test 1 
 // for (let i = 0; i < tab.length; i++){
@@ -79,16 +79,33 @@ let tab = ["Wesh ", "ca va ", "ou ", "quoi?"];
 
 // test 3 IF ELSE
 
+// for (let i = 0; i < tab.length; i++){
+//     if (tab[i] == tab[1]){
+//         console.log(tab[i].toUpperCase());
+
+//     }else{
+//         console.log(tab[i].toLowerCase());
+
+//     }
+// }
+
+// TEST 4 ON Y EST PRESKK
+
 for (let i = 0; i < tab.length; i++){
     if (tab[i] == tab[1]){
         console.log(tab[i].toUpperCase());
 
-    }else if (tab[i] == tab[1]){
+    }else if (tab[i] == tab[3]){
         console.log(tab[i].toUpperCase());
 
     }else{
-        console.log(tab[i].toLowerCase());
+         console.log(tab[i].toLowerCase());
+
+    }
+
+    
 }
+
 
 
 
